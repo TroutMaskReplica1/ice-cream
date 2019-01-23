@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <script src="js/jquery.js" charset="utf-8"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-    <h1>What is your favorite flavor of ice cream?</h1>
-    <form class="ice-cream" id="icecream" action="index.html" method="post">
-      <input type="text" id="ice-cream">
-      <label for="ice-cream">Enter a flavor of ice cream.</label>
-      <button type="submit" name="button">Submit</button>
+    <h1>What should we get at the store?</h1>
+    <form id="food" action="index.html" method="post">
+      <input type="text" id="food-in" name="food" value="">
+      <button type="submit" name="button">submit</button>
+    </form>
+    <form id="list" action="index.html" method="post">
+      <input type="text" id="food-list" name="food" value="">
+      <button type="ordered-list" name="button">ordered-list</button>
     </form>
     <h2 id="display"></h2>
+
   </body>
 </html>

@@ -1,10 +1,18 @@
 $(document).ready(function() {
-  var icecream = ["chocolate","vanilla","pistachio","strawberry","rocky road"]
-  for(var i=0; i<icecream.length; i++) {
-    $("#display").append("<h2>" + icecream[i] + "</h2>");
+
+   // $("#display").append("<h2>" + list[i] + "</h2>");
   }
-  $("#icecream").submit(function(event) {
+  $("list").submit(function(event) {
+    var list = ("input#list");
+    var splitlist = list.split(" ");
+    var sortlist = splitlist.sort();
+    for(var i=0; i<list.length; i++) {
+  });
+  $("#food").submit(function(event) {
+    list.push($("#food-in").val());
+    $("#display").append("<h2>" + $('#food-in').val() + "</h2>");
     event.preventDefault();
-    $("#display").append("<h2>" + $('#ice-cream').val() + "</h2>");
   });
 });
+
+splitlist.sort($("#food-list").val());
